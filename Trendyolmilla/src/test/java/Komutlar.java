@@ -47,8 +47,9 @@ public class Komutlar {
 
     }
 
-    public void bulanaKadarIn(String elementId) {
-        driver.findElement(By.partialLinkText(elementId));
+   public void bulanaKadarIn(String elementId) {
+        driver.findElement(By.xpath(elementId)).getText();
+        jsx.executeScript("arguments[0].scrollIntoView();",elementId);
 
     }
 }
