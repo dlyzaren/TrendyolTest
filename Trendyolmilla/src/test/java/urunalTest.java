@@ -12,6 +12,7 @@ public class urunalTest  {
     private Komutlar  komutlar;
     private AnaSayfa anaSayfa;
     JavascriptExecutor jsx = (JavascriptExecutor) driver;
+    static int milis= 1500;
 
 
 
@@ -25,7 +26,7 @@ public class urunalTest  {
         driver.manage().window().maximize();
         anaSayfa = new AnaSayfa(driver);
         driver.get("https://www.trendyol-milla.com/");
-        JavascriptExecutor jsx = (JavascriptExecutor) driver;
+       
 
 
     }
@@ -39,9 +40,13 @@ public class urunalTest  {
 
         anaSayfa.yaziyaz(anaSayfa.arama, "sweatshirt");
         anaSayfa.tusaBasCSS(anaSayfa.enter);
+        Thread.sleep(milis);
 
         anaSayfa.tusaBasXpath(anaSayfa.millaSec);
-        jsx.executeScript("window.scrollBy(0,380");
+        Thread.sleep(milis); 
+        
+        anaSayfa.bulanaKadarIn(anaSayfa.pembe); //inmiyor
+
 
 
         
