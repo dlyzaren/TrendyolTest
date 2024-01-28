@@ -11,7 +11,7 @@ public class AnaSayfa extends Komutlar{
  public final String arananUrun= "Antrasit Selanik/Triko Görünümlü Fermuarlı Yaka Regular";
 
 
- public final String pembe = "//h3[contains(.,'TRENDYOLMİLLAFuşya Kalın İçi Polarlı Regular/Normal Kalıp Bisiklet Yaka Basic Ör')]";
+ public final String pembe = "//span[contains(.,'Fuşya Kalın İçi Polarlı Regular/Normal Kalıp Bisiklet Yaka Basic Örme Sweatshirt')]";
 
  public final String millaSec = "//div[@class='aggrgtn-cntnr-wrppr']/div[@class='fltrs-wrppr hide-fltrs']/div[2]//div[2]//div[@class='chckbox']";
 
