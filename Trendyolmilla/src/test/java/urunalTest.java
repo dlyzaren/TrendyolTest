@@ -45,7 +45,7 @@ public class urunalTest  {
         anaSayfa.tusaBasXpath(anaSayfa.millaSec);
         Thread.sleep(milis); 
         
-        anaSayfa.bulanaKadarIn(anaSayfa.pembe); //inmiyor
+        anaSayfa.bulanaKadarIn(anaSayfa.pembe); //asagi inmiyor
 
 
 
