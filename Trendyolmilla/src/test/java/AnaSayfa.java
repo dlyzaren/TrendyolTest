@@ -16,7 +16,7 @@ public class AnaSayfa extends Komutlar{
  public final String millaSec = "//div[@class='aggrgtn-cntnr-wrppr']/div[@class='fltrs-wrppr hide-fltrs']/div[2]//div[2]//div[@class='chckbox']";
 
 
-//span[contains(.,'Antrasit Selanik/Triko Görünümlü Fermuarlı Yaka Regular/Normal Kalıp Örme Sweats')]
+
 
 
 
