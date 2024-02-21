@@ -47,10 +47,38 @@ public class Komutlar {
 
     }
 
-   public void bulanaKadarIn(String elementId) {
-        driver.findElement(By.xpath(elementId)).getText();
-        jsx.executeScript("arguments[0].scrollIntoView();",elementId);
+   public void bulanaKadarIn(String elementsId) {
+
+       WebElement kaydir =  driver.findElement(By.xpath(elementsId));
+
+        //Actions actions = new Actions(driver); //ALTERNATİF
+        //actions.moveToElement(kaydır);
+       // actions.perform();
+
+        JavascriptExecutor jsx = (JavascriptExecutor) driver;
+        jsx.executeScript("arguments[0].scrollIntoView();",kaydir);
+
 
     }
+   public void sepeteEklendiTespit(String elementId) {
+       String tespit = driver.findElement(By.cssSelector(".add-to-basket-button-text-success")).getText();
+       System.out.println("Sayfa mesajınız; " + tespit);
+
+
+   }
+   public void yeniSekmeyeGec(){
+       Set<String> windows; // sekmeleri tutacak
+       Iterator<String> window; // sekmeler arasında gezmemeizi sağlayacak arama yapmamızı
+
+       String parentId; //iterator için ana sekme
+       String chilIdOne;
+       windows = driver.getWindowHandles();
+
+       window = windows.iterator();
+       parentId = window.next();
+       chilIdOne = window.next();
+       driver.switchTo().window(chilIdOne);
+
+   }
 }
 
