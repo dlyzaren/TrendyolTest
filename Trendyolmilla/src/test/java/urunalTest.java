@@ -45,13 +45,32 @@ public class urunalTest  {
         anaSayfa.tusaBasXpath(anaSayfa.millaSec);
         Thread.sleep(milis); 
         
-        anaSayfa.bulanaKadarIn(anaSayfa.pembe); //asagi inmiyor
+       //anaSayfa.bulanaKadarIn(anaSayfa.pembe); ACTION ALTERNATİF
+
+        anaSayfa.bulanaKadarIn(anaSayfa.pembe);
+
+        anaSayfa.tusaBasXpath(anaSayfa.pembe);
+        Thread.sleep(milis);
+
+
+        anaSayfa.yeniSekmeyeGec(); //seçilen ürünü yeni sekmede açtığı için sekme değiştirmen gerekir
+
+
+        anaSayfa.tusaBasXpath(anaSayfa.bedenSec);
+        Thread.sleep(milis);
+
+        anaSayfa.tusaBasCSS(anaSayfa.sepeteAt);
+        Thread.sleep(milis);
+        anaSayfa.sepeteEklendiTespit(anaSayfa.sepeteEklendi);
+        Thread.sleep(milis);
 
 
 
         
-
-
+    }
+      @AfterEach
+    public void tearDown() {
+        driver.quit();
     }
 
 
