@@ -8,7 +8,6 @@ public class AnaSayfa extends Komutlar{
 
  public final String carpi = "Combined-Shape";
 
- public final String arananUrun= "Antrasit Selanik/Triko Görünümlü Fermuarlı Yaka Regular";
 
 
  public final String pembe = "//span[contains(.,'Kırmızı Kalın İçi Polarlı Dik Yaka Relaxed/Rahat Kalıp Örme Sweatshirt TWOAW20SW')]";
