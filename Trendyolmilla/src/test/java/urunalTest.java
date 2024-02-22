@@ -63,16 +63,29 @@ public class urunalTest  {
         Thread.sleep(milis);
         anaSayfa.sepeteEklendiTespit(anaSayfa.sepeteEklendi);
         Thread.sleep(milis);
+        anaSayfa.sepetimeGelXpath(anaSayfa.sepetim);  //sepetim butonunun üzerine geldi
+        Thread.sleep(1000);
+        anaSayfa.sepetimeGelCss(anaSayfa.siparisiTamamla); //sepetim butonunun üzerine geldiğinde siparişi tamamlaya tıkladı
+        Thread.sleep(milis);
 
+        anaSayfa.tusaBasCSS(anaSayfa.sepetteCarpi);
+        Thread.sleep(milis);
 
+        anaSayfa.sepetBilgileriGelsin(anaSayfa.sepetBilgeri);
+
+        anaSayfa.tusaBasXpath(anaSayfa.sepetiOnayla);
+        Thread.sleep(milis);
+
+        anaSayfa.testSondAdim(anaSayfa.gelenMesajim);
+        Thread.sleep(milis);
 
         
     }
+    
       @AfterEach
     public void tearDown() {
         driver.quit();
     }
-
 
 
 }
