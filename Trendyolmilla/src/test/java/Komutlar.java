@@ -80,5 +80,41 @@ public class Komutlar {
        driver.switchTo().window(chilIdOne);
 
    }
+
+ public void sepetimeGelXpath(String elementId) {
+       WebElement sepet = driver.findElement(By.xpath(elementId));
+
+       Actions actions = new Actions(driver);
+       actions.moveToElement(sepet).perform();
+
+
+   }
+    public void sepetimeGelCss(String elementId) {
+        WebElement sepetCss = driver.findElement(By.cssSelector(elementId));
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(sepetCss).click().perform();
+
+
+    }
+    public void sepetBilgileriGelsin(String bilgi){
+       String bilgiler=  driver.findElement(By.cssSelector(bilgi)).getText();
+        System.out.println("Sepet bilgileriniz : " +bilgiler);
+    }
+
+    public void testSondAdim(String gelen){
+        String beklenenMesaj = "Trendyol Hesabınız Yok Mu?";
+        String gelenMesaj = driver.findElement(By.cssSelector(gelen)).getText();
+        Assertions.assertEquals(beklenenMesaj,gelenMesaj);
+        System.out.println("Beklenen mesaj; " +beklenenMesaj + " Gelen mesaj ; " +gelenMesaj);
+
+
+
+
+    }
+
+
+
+    
 }
 
