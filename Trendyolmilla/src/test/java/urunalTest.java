@@ -11,7 +11,6 @@ public class urunalTest  {
     private WebDriver driver ;
     private Komutlar  komutlar;
     private AnaSayfa anaSayfa;
-    JavascriptExecutor jsx = (JavascriptExecutor) driver;
     static int milis= 1500;
 
 
@@ -28,7 +27,6 @@ public class urunalTest  {
         driver.get("https://www.trendyol-milla.com/");
        
 
-
     }
 
     @Test
@@ -44,6 +42,7 @@ public class urunalTest  {
 
         anaSayfa.tusaBasXpath(anaSayfa.millaSec);
         Thread.sleep(milis); 
+        anaSayfa.linkKontrol("https://www.trendyol-milla.com/sr?wc=1179&wb=101476&qt=sweatshirt&st=sweatshirt&os=1");
         
        //anaSayfa.bulanaKadarIn(anaSayfa.pembe); ACTION ALTERNATİF
 
@@ -54,6 +53,7 @@ public class urunalTest  {
 
 
         anaSayfa.yeniSekmeyeGec(); //seçilen ürünü yeni sekmede açtığı için sekme değiştirmen gerekir
+         anaSayfa.urunIsimKontrol("Kırmızı Kalın İçi Polarlı Dik Yaka Relaxed/Rahat Kalıp Örme Sweatshirt TWOAW20SW0584", anaSayfa.gelenUrün);
 
 
         anaSayfa.tusaBasXpath(anaSayfa.bedenSec);
