@@ -112,7 +112,18 @@ public class Komutlar {
 
 
     }
+ public void linkKontrol(String beklenenLink) {
+        String gelenlink = driver.getCurrentUrl();
+        Assertions.assertEquals(beklenenLink,gelenlink);
+        System.out.println("Bu sayfadasınız " + gelenlink);
 
+    }
+    public void urunIsimKontrol(String beklenenİsim, String gelenİsim1){
+        String gelenİsim = driver.findElement(By.xpath(gelenİsim1)).getText();
+        Assertions.assertEquals(beklenenİsim,gelenİsim);
+        System.out.println("Doğru üründesiniz " + gelenİsim);
+
+    }
 
 
     
