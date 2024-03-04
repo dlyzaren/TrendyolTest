@@ -7,10 +7,8 @@ public class AnaSayfa extends Komutlar{
  public final String enter = ".cyrzo7gC";
 
  public final String carpi = "Combined-Shape";
-
-
-
- public final String pembe = "//span[contains(.,'Kırmızı Kalın İçi Polarlı Dik Yaka Relaxed/Rahat Kalıp Örme Sweatshirt TWOAW20SW')]";
+ 
+ public final String sepetteCarpi = ".ty-cross";
 
  public final String millaSec = "//div[@class='aggrgtn-cntnr-wrppr']/div[@class='fltrs-wrppr hide-fltrs']/div[2]//div[2]//div[@class='chckbox']";
  
@@ -31,6 +29,8 @@ public class AnaSayfa extends Komutlar{
  public final String sepetiOnayla = "//div[@class='pb-summary']/div[4]/a[.='Sepeti Onayla']";
 
  public final String gelenMesajim= ".pb-guest-order-flow-modal-content";
+ 
+ public final String gelenUrün = "//span[contains(.,'Kırmızı Kalın İçi Polarlı Dik Yaka Relaxed/Rahat Kalıp Örme Sweatshirt TWOAW20SW')]"; //xpath
 
 
 
