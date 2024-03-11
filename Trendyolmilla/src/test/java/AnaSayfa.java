@@ -14,7 +14,7 @@ public class AnaSayfa extends Komutlar{
  
  public final String  pembe = "//span[contains(.,'Kırmızı Kalın İçi Polarlı Dik Yaka Relaxed/Rahat Kalıp Örme Sweatshirt TWOAW20SW')]";
 
- public final String bedenSec = "//div[.='XL']";
+ public final String bedenSec = "//div[.='S']";
 
  public final String sepeteAt = ".add-to-basket-button-text";
 
