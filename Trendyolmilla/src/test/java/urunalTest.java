@@ -53,7 +53,7 @@ public class urunalTest  {
 
 
         anaSayfa.yeniSekmeyeGec(); //seçilen ürünü yeni sekmede açtığı için sekme değiştirmen gerekir
-         anaSayfa.urunIsimKontrol("Kırmızı Kalın İçi Polarlı Dik Yaka Relaxed/Rahat Kalıp Örme Sweatshirt TWOAW20SW0584", anaSayfa.gelenUrün);
+         anaSayfa.urunIsimKontrol("Mavi Bisiklet Yaka Basic Fit Baskılı Kalın İçi Polarlı Örme Sweatshirt TWOAW22SW1957", anaSayfa.gelenUrun);
 
 
         anaSayfa.tusaBasXpath(anaSayfa.bedenSec);
