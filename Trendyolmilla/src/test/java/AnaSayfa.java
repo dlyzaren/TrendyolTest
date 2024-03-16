@@ -12,9 +12,9 @@ public class AnaSayfa extends Komutlar{
 
  public final String millaSec = "//div[@class='aggrgtn-cntnr-wrppr']/div[@class='fltrs-wrppr hide-fltrs']/div[2]//div[2]//div[@class='chckbox']";
  
- public final String  pembe = "//span[contains(.,'Kırmızı Kalın İçi Polarlı Dik Yaka Relaxed/Rahat Kalıp Örme Sweatshirt TWOAW20SW')]";
+ public final String  pembe =  "//span[contains(.,'Mavi Bisiklet Yaka Basic Fit Baskılı Kalın İçi Polarlı Örme Sweatshirt TWOAW22SW')]";
 
- public final String bedenSec = "//div[.='S']";
+ public final String bedenSec = "//div[.='XL']"; //xpath
 
  public final String sepeteAt = ".add-to-basket-button-text";
 
@@ -30,7 +30,7 @@ public class AnaSayfa extends Komutlar{
 
  public final String gelenMesajim= ".pb-guest-order-flow-modal-content";
  
- public final String gelenUrün = "//span[contains(.,'Kırmızı Kalın İçi Polarlı Dik Yaka Relaxed/Rahat Kalıp Örme Sweatshirt TWOAW20SW')]"; //xpath
+ public final String gelenUrun = "//span[contains(.,'Mavi Bisiklet Yaka Basic Fit Baskılı Kalın İçi Polarlı Örme Sweatshirt TWOAW22SW')]"; //xpath
 
 
 
